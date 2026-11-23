@@ -1,16 +1,13 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage[latin1,utf8]{inputenc}
 \usepackage[portuguese]{babel}
-%\usepackage[T1]{fontenc}
 \usepackage{multicol}
 \usepackage{amsmath}
-%\usepackage{graphicx}
 \usepackage{amssymb}
-%\usepackage{amsfonts}
 \usepackage{color}
 \usepackage{multirow}
 \usepackage{multicol}
-
+\usepackage{enumerate}
 
 \author{Autor \\ Lafaiete Santos \\ Versão \textbf{XX}}
 \title{\textbf{Teste de Produção de Relatórios}}
@@ -93,9 +90,30 @@ Total Estudantes & Grau de Estudo & Nº de Estudantes \\ \hline \hline
 \begin{multicols}{2}
 
 \subsubsection{Lista}
+\begin{itemize}
+\item Faculdade de Arquitetura
+\begin{enumerate}[A.]
+\item Faculdade de Direito
+\begin{description}
+\item [Faculdade] de Farmácia
+\item [Faculdade] de Letras
+\end{description}
+\end{enumerate}
+\item Faculdade de Medicina
+\begin{enumerate}[i]
+\item Faculdade de Psicologia
+\end{enumerate}
+\end{itemize}
 
 \subsubsection{Outros}
-
+\begin{verbatim}
+\begin{figure}
+\begin{center}
+\caption{Logotipo-UL}
+\includegraphics[scale=.2]{logoUL}
+\end{center}
+\end{figure}
+\end{verbatim}
 
 \end{multicols}
 
