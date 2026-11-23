@@ -7,6 +7,9 @@
 %\usepackage{graphicx}
 \usepackage{amssymb}
 %\usepackage{amsfonts}
+\usepackage{color}
+\usepackage{multirow}
+\usepackage{multicol}
 
 
 \author{Autor \\ Lafaiete Santos \\ Versão \textbf{XX}}
@@ -48,9 +51,52 @@ x_4=y_4+z_4&-w_4-v_4\\
 \vspace{1cm}
 
 \begin{multicols}{2}
-
 \subsection{Expressão}
 $$
 \mathbb{Q}^+ = \left\{\frac{a}{b}:a,b \in\mathbb{Z}^+ \text{ e }b\neq0\right\}$$
+
+\subsection{Sistema de Equações}
+$$
+y = \begin{cases} 
+2x+5 & \text{se } x<1\\
+a^2+b^2 & \text{se } x>0 \text{ e } y\leq2\\
+0 & \text{qualquer outro valor}\\
+\end{cases} $$
 \end{multicols}
+\vspace{1cm}
+
+\subsection{Integral e Somatório}
+$$
+\int_0^{\pi} x^ne^{-ax}dx= \sum_{k=0}^{n}\dfrac{(-1)^k\cdot n!}{k!(n-k!)} \cdot \dfrac{\pi^{n-k+1}}{a^{n-k+1}} $$
+\newpage
+
+\section*{\Huge Modo Texto}
+\subsubsection{Texto e Formatação com espaço de 16 milímetros}
+\hskip 16mm A Universidade de {\large Lisboa} recebe todos os anos cerca de \textcolor{blue}{9.000 estudantes} internacionais provenientes de mais de \textcolor{red}{100 países} que procuram uma educação de alta qualidade, bem como a cultura, o clima e a hospitalidade que Lisboa, e {\Huge Portugal}, têm para oferecer. A ULisboa é a
+\underline{maior Universidade de Portugal} e uma das maiores da {\Huge Europa}.\footnote{Texto retirado de https://ciencias.ulisboa.pt/}
+
+\subsubsection{Tabela Alinhada À Direita}
+\begin{table}[h!]
+\begin{flushright}
+\begin{tabular}{|c||l||r|}\hline
+Total Estudantes & Grau de Estudo & Nº de Estudantes \\ \hline \hline
+\multirow{4}{*}
+{\textbf{51.917}} & Licenciatura & \textbf{26.326} \\
+& Mestrado Integrado & \textbf{6.419} \\ 
+& Mestrado & \textbf{14.212} \\ 
+& Doutoramento & \textbf{4.961} \\ \hline
+\end{tabular}
+\caption{Estudantes na ULisboa}
+\end{flushright}
+\end{table}
+
+\begin{multicols}{2}
+
+\subsubsection{Lista}
+
+\subsubsection{Outros}
+
+
+\end{multicols}
+
 \end{document}
